@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { SparklesText } from "@/components/ui/sparkles-text";
 import { useState } from "react";
 
 const Index = () => {
@@ -27,10 +28,12 @@ const Index = () => {
       <section className="bg-gradient-to-br from-blue-50 to-white py-20 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
-            <h1 className="text-5xl font-bold text-gray-900 leading-tight">
-              ИИ чат-боты нового
-              <span className="text-blue-600"> поколения</span>
-            </h1>
+            <SparklesText 
+              text="ИИ чат-боты нового поколения"
+              className="text-5xl font-bold text-gray-900 leading-tight"
+              colors={{ first: "#0066FF", second: "#4FC3F7" }}
+              sparklesCount={15}
+            />
             <p className="text-xl text-gray-600 leading-relaxed">
               Создаем умных ботов на базе ChatGPT для интеграции в любой сайт и мессенджеры. 
               Революционная цена — всего 1 рубль в месяц.
@@ -133,7 +136,12 @@ const Index = () => {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in">Революционная цена</h2>
+          <SparklesText 
+            text="Революционная цена"
+            className="text-4xl font-bold text-gray-900 mb-4"
+            colors={{ first: "#0066FF", second: "#10B981" }}
+            sparklesCount={8}
+          />
           <p className="text-xl text-gray-600 mb-12">Доступные технологии для каждого</p>
           
           <Card className="max-w-md mx-auto p-8 border-2 border-blue-600 relative overflow-hidden">
