@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
+import { useState } from "react";
 
 const Index = () => {
+  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   return (
     <div className="min-h-screen bg-white font-inter">
       {/* Header */}
@@ -45,11 +47,13 @@ const Index = () => {
             </div>
           </div>
           <div className="relative animate-float">
-            <img 
-              src="/img/258b6174-a630-4007-bb52-861b861c2528.jpg" 
-              alt="AI Chatbot Demo" 
-              className="w-full h-auto rounded-2xl shadow-2xl"
-            />
+            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-300">
+              <img 
+                src="/img/fc2698e4-2aae-424b-8fc6-f57ee08947be.jpg" 
+                alt="AI Chatbot Demo" 
+                className="w-full h-auto rounded-xl"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -58,42 +62,54 @@ const Index = () => {
       <section id="services" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Интеграция везде</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in">Интеграция везде</h2>
             <p className="text-xl text-gray-600">Ваш ИИ-ассистент работает на всех платформах</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <Card className="p-6 border-l-4 border-l-blue-600 hover:shadow-lg transition-shadow">
+              <Card 
+                className="p-6 border-l-4 border-l-blue-600 hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
+                onMouseEnter={() => setHoveredCard(1)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
                 <CardContent className="p-0">
                   <div className="flex items-start space-x-4">
-                    <Icon name="Globe" size={24} className="text-blue-600 mt-1" />
+                    <Icon name="Globe" size={24} className={`mt-1 transition-colors duration-300 ${hoveredCard === 1 ? 'text-blue-700' : 'text-blue-600'}`} />
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">Интеграция в сайты</h3>
+                      <h3 className="text-xl font-semibold mb-2 text-gray-900">Интеграция в сайты</h3>
                       <p className="text-gray-600">Легкая установка виджета чата на любой веб-сайт всего одной строкой кода</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="p-6 border-l-4 border-l-blue-600 hover:shadow-lg transition-shadow">
+              <Card 
+                className="p-6 border-l-4 border-l-blue-600 hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
+                onMouseEnter={() => setHoveredCard(2)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
                 <CardContent className="p-0">
                   <div className="flex items-start space-x-4">
-                    <Icon name="MessageCircle" size={24} className="text-blue-600 mt-1" />
+                    <Icon name="MessageCircle" size={24} className={`mt-1 transition-colors duration-300 ${hoveredCard === 2 ? 'text-blue-700' : 'text-blue-600'}`} />
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">Мессенджеры</h3>
+                      <h3 className="text-xl font-semibold mb-2 text-gray-900">Мессенджеры</h3>
                       <p className="text-gray-600">Подключение к Telegram, WhatsApp, Instagram и другим популярным платформам</p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="p-6 border-l-4 border-l-blue-600 hover:shadow-lg transition-shadow">
+              <Card 
+                className="p-6 border-l-4 border-l-blue-600 hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
+                onMouseEnter={() => setHoveredCard(3)}
+                onMouseLeave={() => setHoveredCard(null)}
+              >
                 <CardContent className="p-0">
                   <div className="flex items-start space-x-4">
-                    <Icon name="Cpu" size={24} className="text-blue-600 mt-1" />
+                    <Icon name="Cpu" size={24} className={`mt-1 transition-colors duration-300 ${hoveredCard === 3 ? 'text-blue-700' : 'text-blue-600'}`} />
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">ИИ на базе ChatGPT</h3>
+                      <h3 className="text-xl font-semibold mb-2 text-gray-900">ИИ на базе ChatGPT</h3>
                       <p className="text-gray-600">Самые современные возможности искусственного интеллекта для ваших клиентов</p>
                     </div>
                   </div>
@@ -102,11 +118,13 @@ const Index = () => {
             </div>
             
             <div className="flex justify-center">
-              <img 
-                src="/img/f5454da5-ce47-4003-a0f8-e943092fd1f0.jpg" 
-                alt="Messenger Integration" 
-                className="w-full max-w-md h-auto rounded-2xl shadow-xl"
-              />
+              <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                <img 
+                  src="/img/e5054189-a6e3-4f8f-be9e-25761806fb8a.jpg" 
+                  alt="Messenger Integration" 
+                  className="w-full max-w-sm h-auto rounded-xl"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -115,7 +133,7 @@ const Index = () => {
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Революционная цена</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in">Революционная цена</h2>
           <p className="text-xl text-gray-600 mb-12">Доступные технологии для каждого</p>
           
           <Card className="max-w-md mx-auto p-8 border-2 border-blue-600 relative overflow-hidden">
@@ -158,7 +176,7 @@ const Index = () => {
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Наши проекты</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in">Наши проекты</h2>
           <p className="text-xl text-gray-600 mb-12">Успешные внедрения ИИ-ботов</p>
           
           <div className="grid md:grid-cols-3 gap-8">
