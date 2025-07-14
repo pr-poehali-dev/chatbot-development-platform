@@ -146,7 +146,7 @@ const Index = () => {
               <Icon name="Phone" size={20} className="mr-2" />
               Позвонить
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 text-white border-white hover:bg-white hover:text-blue-600">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-3">
               <Icon name="Mail" size={20} className="mr-2" />
               Написать
             </Button>
