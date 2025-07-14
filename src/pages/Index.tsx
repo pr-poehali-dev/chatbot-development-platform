@@ -63,12 +63,13 @@ const Index = () => {
           />
           <p className="text-xl text-gray-600 mb-12">Доступные технологии для каждого</p>
           
-          <Card className="max-w-md mx-auto p-8 border-2 border-blue-600 relative overflow-hidden">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="relative max-w-md mx-auto">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
               <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
                 ПОПУЛЯРНО
               </span>
             </div>
+            <Card className="p-8 border-2 border-blue-600 relative">
             <CardContent className="p-0 text-center">
               <div className="mb-6">
                 <div className="text-6xl font-bold text-blue-600 mb-2">1₽</div>
@@ -96,7 +97,8 @@ const Index = () => {
                 Начать за 1₽
               </Button>
             </CardContent>
-          </Card>
+            </Card>
+          </div>
         </div>
       </section>
 
