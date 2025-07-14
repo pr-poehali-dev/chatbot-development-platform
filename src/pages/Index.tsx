@@ -13,7 +13,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Icon name="Bot" size={28} className="text-blue-600" />
-            <span className="text-xl font-semibold text-gray-900">БотоМагия</span>
+            <span className="text-xl font-semibold text-black" style={{ color: '#000000' }}>БотоМагия</span>
           </div>
           <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
             <Icon name="Menu" size={24} className="text-gray-600" />
