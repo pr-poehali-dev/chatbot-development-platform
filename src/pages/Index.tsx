@@ -103,10 +103,8 @@ const Index = () => {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 px-6 bg-white">
+      <section id="portfolio" className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in">Наши проекты</h2>
-          <p className="text-xl text-gray-600 mb-12">Успешные внедрения ИИ-ботов</p>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="p-6 hover:shadow-lg transition-shadow">
