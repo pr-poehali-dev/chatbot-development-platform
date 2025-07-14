@@ -120,7 +120,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
         {sparkles.map((sparkle) => (
           <Sparkle key={sparkle.id} {...sparkle} />
         ))}
-        <strong className="text-gray-900" style={{ color: '#1a1a1a' }}>{text}</strong>
+        <strong className="text-zinc-700" style={{ color: '#1a1a1a' }}>{text}</strong>
       </span>
     </div>
   );
