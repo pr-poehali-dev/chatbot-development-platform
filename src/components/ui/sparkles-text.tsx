@@ -106,12 +106,13 @@ const SparklesText: React.FC<SparklesTextProps> = ({
 
   return (
     <div
-      className={cn("text-6xl font-bold text-gray-800", className)}
+      className={cn("text-6xl font-bold", className)}
       {...props}
       style={
         {
           "--sparkles-first-color": `${colors.first}`,
           "--sparkles-second-color": `${colors.second}`,
+          color: '#1a1a1a'
         } as CSSProperties
       }
     >
@@ -119,7 +120,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({
         {sparkles.map((sparkle) => (
           <Sparkle key={sparkle.id} {...sparkle} />
         ))}
-        <strong className="text-gray-800">{text}</strong>
+        <strong className="text-gray-900" style={{ color: '#1a1a1a' }}>{text}</strong>
       </span>
     </div>
   );
