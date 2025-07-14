@@ -12,8 +12,8 @@ const Index = () => {
       <header className="bg-white border-b border-gray-100 px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Icon name="Zap" size={28} className="text-green-500" />
-            <span className="text-xl font-semibold text-gray-900">BotCraft</span>
+            <Icon name="Bot" size={28} className="text-blue-600" />
+            <span className="text-xl font-semibold text-gray-900">БотоМагия</span>
           </div>
           <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
             <Icon name="Menu" size={24} className="text-gray-600" />
