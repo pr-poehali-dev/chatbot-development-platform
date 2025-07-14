@@ -161,7 +161,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-6">
             <Icon name="Bot" size={28} className="text-blue-600" />
-            <span className="text-xl font-semibold text-white">БотоМагия</span>
+            <span className="text-xl font-semibold text-zinc-800">БотоМагия</span>
           </div>
           <p className="text-gray-400 mb-6">
             Создаем будущее общения с клиентами уже сегодня
