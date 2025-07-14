@@ -46,15 +46,7 @@ const Index = () => {
               </Button>
             </div>
           </div>
-          <div className="relative animate-float">
-            <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-12 shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center justify-center min-h-[300px]">
-              <div className="text-center">
-                <Icon name="MessageSquare" size={80} className="text-green-600 mx-auto mb-4" />
-                <p className="text-green-700 font-semibold text-lg">Умный ИИ-бот</p>
-                <p className="text-green-600 text-sm mt-2">Готов помочь 24/7</p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </section>
 
