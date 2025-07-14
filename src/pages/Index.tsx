@@ -160,8 +160,8 @@ const Index = () => {
       <footer className="bg-gray-900 text-white py-12 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-6">
-            <Icon name="Zap" size={28} className="text-green-500" />
-            <span className="text-xl font-semibold">BotCraft</span>
+            <Icon name="Bot" size={28} className="text-blue-600" />
+            <span className="text-xl font-semibold text-white">БотоМагия</span>
           </div>
           <p className="text-gray-400 mb-6">
             Создаем будущее общения с клиентами уже сегодня
