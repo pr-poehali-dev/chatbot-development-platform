@@ -30,7 +30,7 @@ const Index = () => {
           <div className="space-y-8 animate-fade-in">
             <SparklesText 
               text="ИИ чат-боты нового поколения"
-              className="text-5xl font-bold text-gray-900 leading-tight"
+              className="text-5xl font-bold leading-tight"
               colors={{ first: "#0066FF", second: "#4FC3F7" }}
               sparklesCount={15}
             />
@@ -50,12 +50,11 @@ const Index = () => {
             </div>
           </div>
           <div className="relative animate-float">
-            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-300">
-              <img 
-                src="/img/fc2698e4-2aae-424b-8fc6-f57ee08947be.jpg" 
-                alt="AI Chatbot Demo" 
-                className="w-full h-auto rounded-xl"
-              />
+            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-12 shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center justify-center min-h-[300px]">
+              <div className="text-center">
+                <Icon name="Bot" size={80} className="text-blue-600 mx-auto mb-4" />
+                <p className="text-blue-700 font-semibold text-lg">Демо ИИ-бота</p>
+              </div>
             </div>
           </div>
         </div>
@@ -121,12 +120,21 @@ const Index = () => {
             </div>
             
             <div className="flex justify-center">
-              <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                <img 
-                  src="/img/e5054189-a6e3-4f8f-be9e-25761806fb8a.jpg" 
-                  alt="Messenger Integration" 
-                  className="w-full max-w-sm h-auto rounded-xl"
-                />
+              <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                <div className="grid grid-cols-2 gap-6 max-w-sm">
+                  <div className="bg-green-500 rounded-xl p-4 flex items-center justify-center">
+                    <Icon name="MessageCircle" size={32} className="text-white" />
+                  </div>
+                  <div className="bg-blue-500 rounded-xl p-4 flex items-center justify-center">
+                    <Icon name="Send" size={32} className="text-white" />
+                  </div>
+                  <div className="bg-pink-500 rounded-xl p-4 flex items-center justify-center">
+                    <Icon name="Camera" size={32} className="text-white" />
+                  </div>
+                  <div className="bg-blue-600 rounded-xl p-4 flex items-center justify-center">
+                    <Icon name="Globe" size={32} className="text-white" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -138,7 +146,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center">
           <SparklesText 
             text="Революционная цена"
-            className="text-4xl font-bold text-gray-900 mb-4"
+            className="text-4xl font-bold mb-4"
             colors={{ first: "#0066FF", second: "#10B981" }}
             sparklesCount={8}
           />
