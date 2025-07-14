@@ -12,15 +12,12 @@ const Index = () => {
       <header className="bg-white border-b border-gray-100 px-6 py-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Icon name="Bot" size={28} className="text-blue-600" />
-            <span className="text-xl font-semibold text-gray-900">AI ChatBot Development</span>
+            <Icon name="Zap" size={28} className="text-green-500" />
+            <span className="text-xl font-semibold text-gray-900">BotCraft</span>
           </div>
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#services" className="text-gray-600 hover:text-blue-600 transition-colors">Услуги</a>
-            <a href="#portfolio" className="text-gray-600 hover:text-blue-600 transition-colors">Портфолио</a>
-            <a href="#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">Цены</a>
-            <a href="#contact" className="text-gray-600 hover:text-blue-600 transition-colors">Контакты</a>
-          </nav>
+          <button className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+            <Icon name="Menu" size={24} className="text-gray-600" />
+          </button>
         </div>
       </header>
 
@@ -50,96 +47,18 @@ const Index = () => {
             </div>
           </div>
           <div className="relative animate-float">
-            <div className="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-12 shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center justify-center min-h-[300px]">
+            <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-12 shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center justify-center min-h-[300px]">
               <div className="text-center">
-                <Icon name="Bot" size={80} className="text-blue-600 mx-auto mb-4" />
-                <p className="text-blue-700 font-semibold text-lg">Демо ИИ-бота</p>
+                <Icon name="MessageSquare" size={80} className="text-green-600 mx-auto mb-4" />
+                <p className="text-green-700 font-semibold text-lg">Умный ИИ-бот</p>
+                <p className="text-green-600 text-sm mt-2">Готов помочь 24/7</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 animate-fade-in">Интеграция везде</h2>
-            <p className="text-xl text-gray-600">Ваш ИИ-ассистент работает на всех платформах</p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <Card 
-                className="p-6 border-l-4 border-l-blue-600 hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
-                onMouseEnter={() => setHoveredCard(1)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <CardContent className="p-0">
-                  <div className="flex items-start space-x-4">
-                    <Icon name="Globe" size={24} className={`mt-1 transition-colors duration-300 ${hoveredCard === 1 ? 'text-blue-700' : 'text-blue-600'}`} />
-                    <div>
-                      <h3 className="text-xl font-semibold mb-2 text-gray-900">Интеграция в сайты</h3>
-                      <p className="text-gray-600">Легкая установка виджета чата на любой веб-сайт всего одной строкой кода</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
 
-              <Card 
-                className="p-6 border-l-4 border-l-blue-600 hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
-                onMouseEnter={() => setHoveredCard(2)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <CardContent className="p-0">
-                  <div className="flex items-start space-x-4">
-                    <Icon name="MessageCircle" size={24} className={`mt-1 transition-colors duration-300 ${hoveredCard === 2 ? 'text-blue-700' : 'text-blue-600'}`} />
-                    <div>
-                      <h3 className="text-xl font-semibold mb-2 text-gray-900">Мессенджеры</h3>
-                      <p className="text-gray-600">Подключение к Telegram, WhatsApp, Instagram и другим популярным платформам</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card 
-                className="p-6 border-l-4 border-l-blue-600 hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer"
-                onMouseEnter={() => setHoveredCard(3)}
-                onMouseLeave={() => setHoveredCard(null)}
-              >
-                <CardContent className="p-0">
-                  <div className="flex items-start space-x-4">
-                    <Icon name="Cpu" size={24} className={`mt-1 transition-colors duration-300 ${hoveredCard === 3 ? 'text-blue-700' : 'text-blue-600'}`} />
-                    <div>
-                      <h3 className="text-xl font-semibold mb-2 text-gray-900">ИИ на базе ChatGPT</h3>
-                      <p className="text-gray-600">Самые современные возможности искусственного интеллекта для ваших клиентов</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-            
-            <div className="flex justify-center">
-              <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                <div className="grid grid-cols-2 gap-6 max-w-sm">
-                  <div className="bg-green-500 rounded-xl p-4 flex items-center justify-center">
-                    <Icon name="MessageCircle" size={32} className="text-white" />
-                  </div>
-                  <div className="bg-blue-500 rounded-xl p-4 flex items-center justify-center">
-                    <Icon name="Send" size={32} className="text-white" />
-                  </div>
-                  <div className="bg-pink-500 rounded-xl p-4 flex items-center justify-center">
-                    <Icon name="Camera" size={32} className="text-white" />
-                  </div>
-                  <div className="bg-blue-600 rounded-xl p-4 flex items-center justify-center">
-                    <Icon name="Globe" size={32} className="text-white" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Pricing Section */}
       <section id="pricing" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
@@ -247,8 +166,8 @@ const Index = () => {
       <footer className="bg-gray-900 text-white py-12 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center space-x-2 mb-6">
-            <Icon name="Bot" size={28} className="text-blue-600" />
-            <span className="text-xl font-semibold">AI ChatBot Development</span>
+            <Icon name="Zap" size={28} className="text-green-500" />
+            <span className="text-xl font-semibold">BotCraft</span>
           </div>
           <p className="text-gray-400 mb-6">
             Создаем будущее общения с клиентами уже сегодня
